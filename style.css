@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #3e4a89, #00bfa6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for content */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Input and Button Styles */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00bfa6;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #00bfa6;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: #008f77;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Weather Info Section */
+#weatherInfo {
+    margin-top: 30px;
+    display: none; 
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.weather-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    margin-top: 10px;
+}
+
+.weather-temp {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00bfa6;
+}
+
+.weather-description {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ddd;
+}
+
+#moreInfo {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Unit Toggle Button */
+#unitToggle {
+    background: #fff;
+    color: #282c36;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none; /* Hide initially */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .weather-title {
+        font-size: 20px;
+    }
+
+    .weather-temp {
+        font-size: 28px;
+    }
+}
